@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=#, initial-scale=1.0">
+    <script src="particles.js"></script>
+    <script src="jquery-2.1.4.js"></script>
+    <link rel="stylesheet" type="text/css" href="./demo/css/style.css">
+    <title>Particles.js</title>
+</head>
+<body>
+    <div id="navbar"><span>Particles.js</span></div>
+    <div id="wrapper">
+        <div id="particle-div"></div>
+        <button id="particle-button">Start</button>
+
+    </div>
+    <script>
+        $('#particle-button').click(function(){
+            particlesJS.load('particle-div','particle-cfg.json');
+        });
+    </script>
+</body>
+</html>
